@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Registration</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="#"><img src="LogoEmergency.png" width="100px" height="100px"></a>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="Home.php" class="link">Home</a></li>
+                <li><a href="Ambulace.html" class="link">Ambulace</a></li>
+                <li><a href="Archive.html" class="link">Archive</a></li>
+                <li><a href="Contact.html" class="link active">Contact</a></li>
+                <li><a href="Profile.html" class="link">Profile</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            
+            <button class="btn" id="logoutBtn" onclick="logout()">Log Out</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+
+    <div class="contact-form">
+        
+        <h2>Contact other</h2>
+        </div>
+        <div class="contact-us">
+        <form id="contact-us" method="post" action="contact.php">
+        <input type="text" name="name" class="form-control" placeholder="Your name"
+        required>
+        <br>
+        <input type="text" name="mobile" class="form-control" placeholder="Your mobile
+        number">
+        <br>
+        <input type="email" name="email" class="form-control" placeholder="Your Email"
+        required>
+        <br>
+        <textarea name="message" class="form-control" cols="" rows="3" placeholder="Enter
+        your massege" required></textarea>
+        <br>
+        <input type="submit" class="form-control submit" value="SEND MASSEGE">
+        </form>
+        </div>
+        
+
+
+</body>
+</html>
